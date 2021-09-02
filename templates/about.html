@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style3.css') }}">
+</head>
+<body>
+    <div class="about-section">
+        <h1 style="font-size: 50px;">Our Mission</h1>
+        <p>We are a group of dedicated volunteers from Vishwakarma Institute of Technology 
+          who curate and verify the data coming from several sources. We extract the details,
+           like a patient's symptoms to identify local and community transmission status to
+            find out infection probability of patient. We never collect or expose any personally
+             identifiable data regarding the patients.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='image1.jpg')}}" alt="Suraj" style="width:100%">
+            <div class="container">
+              <h2>Suraj Upadhye</h2>
+              <p class="title">Group Leader</p>
+              <p>Collected the COVID-19 Resources Data, Created the Survey Form, Working on Frontend part using CSS.</p>
+              <p>suraj.upadhye20@vit.edu</p>
+              <p><button class="button"><a href="mailto:suraj.upadhye20@vit.edu" style="color: white; text-decoration: none;">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='image2.jpg')}}"  alt="Eeshan" style="width:100%">
+            <div class="container">
+              <h2>Eeshan Umrani</h2>
+              <p class="title">Assistant Group Leader</p>
+              <p>Collection and Sorting of Data collected from Survey,
+                Defining the labels and features and Deciding the ML model,
+                 Working on ML algorithm for finding Infection Probability.</p>
+              <p>eeshan.umrani20@vit.edu</p>
+              <p><button class="button"><a href="mailto:eeshan.umrani20@vit.edu" style="color: white; text-decoration: none;">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="{{url_for('static', filename='image3.jpg')}}" alt="Rishikesh" style="width:100%">
+            <div class="container">
+              <h2>Rishikesh Unawane</h2>
+              <p class="title">Member</p>
+              <p>Consulted Doctors for COVID-19 Symptom Survey Form, Collection and Sorting of Data collected from Survey,
+                Defining the labels and features and Deciding the ML model, Working on ML algorithm for finding Infection Probability.</p>
+              <p>rishikesh.unawane20@vit.edu</p>
+              <p><button class="button"><a href="mailto:rishikesh.unawane20@vit.edu" style="color: white; text-decoration: none;">Contact</a></button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+              <img src="{{url_for('static', filename='image4.jpg')}}" alt="Yugal" style="width:100%">
+              <div class="container">
+                <h2>Yugal Urkude</h2>
+                <p class="title">Member</p>
+                <p>Working on Frontend part of website using HTML, CSS.</p>
+                <p>yugal.urkude20@vit.edu</p>
+                <p><button class="button"><a href="mailto:yugal.urkude20@vit.edu" style="color: white; text-decoration: none;">Contact</a></button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="{{url_for('static', filename='image5.jpg')}}" alt="Samarth" style="width:100%">
+              <div class="container">
+                <h2>Samarth Usture</h2>
+                <p class="title">Member</p>
+                <p>Working on Frontend part using HTML, CSS.</p>
+                <p>samarth.usture20@vit.edu</p>
+                <p><button class="button"><a href="mailto:samarth.usture20@vit.edu" style="color: white; text-decoration: none;">Contact</a></button></p>
+              </div>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
