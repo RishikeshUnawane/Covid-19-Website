@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Roboto',sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+/* for centering */
+section{
+    width: 100%;
+    height: 100%;
+    background-color: #3c4053;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.cont{
+    width: 100%;
+    height: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.an-it{
+    background-color: #283042;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px .5rem rgba(0,0,0,0.1);
+}
+.an-l{
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.an-l i{
+       color: #e7d5ff;
+       padding: 0.5rem;
+}
+
+.ans{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms;
+    
+}
+.ans p{
+    color: rgba(255,255, 255, 0.6);
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.ans::before{
+    content: "";
+    position: absolute;
+    width: 0.9rem;
+    height: 100%;
+    background-color: #8fc460;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+   
+}
+.an-it:target .ans{
+     max-height: 100rem;
+}
+h1{
+    text-align:center;
+    font-size: 70px;
+    padding: 10px;
+    background-color: black;
+    color: white;  
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
